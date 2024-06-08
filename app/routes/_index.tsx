@@ -1,5 +1,5 @@
-import type { MetaFunction } from "@remix-run/node";
 import { ModeToggle } from "~/components/toggle";
+import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,8 +10,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1 className="text-red-600 text-8xl">Welcome to Remix</h1>
+    <div className="bg-cyan-300 dark:bg-black flex justify-between py-[30px] px-[60px]">
+      <h1 className="text-gray-800 font-bold dark:text-white text-4xl">QTX</h1>
    <ModeToggle/>
     </div>
   );
